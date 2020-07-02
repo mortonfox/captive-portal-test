@@ -4,23 +4,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <head>
     <title>Captive Portal Test</title>
+
+    <style type="text/css">
+body { font-family: sans-serif; }
+h1 { text-align: center; }
+
+a.other { background-color: brown; }
+a.apple { background-color: blue; }
+a.msft { background-color: green; }
+
+a {
+  background-color: red;
+  color: white;
+  padding: 1em 1.5em;
+  margin: 1em 0;
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  box-shadow: 0 0.5em 0 dimgray;
+  position: relative;
+}
+
+a:active {
+  box-shadow: none;
+  top: 0.5em;
+}
+
+li { list-style-type: none; }
+ul { padding: 0; }
+    </style>
   </head>
 
   <body>
     <h1>Captive portal test</h1>
 
     <ul>
-      <li><a href="http://clients3.google.com/generate_204">http://clients3.google.com/generate_204</a>
-      <li><a href="http://www.gstatic.com/generate_204">http://www.gstatic.com/generate_204</a>
-      <li><a href="http://172.217.6.238/generate_204">http://172.217.6.238/generate_204</a>
-      <li><a href="http://captiveportal.kuketz.de/">http://captiveportal.kuketz.de</a>
-      <li><a href="https://e.foundation/net_204/">https://e.foundation/net_204/</a>
-      <li><a href="https://elementary.io/generate_204">https://elementary.io/generate_204</a>
-      <li><a href="http://httpstat.us/204">http://httpstat.us/204</a>
-      <li><a href="http://captive.apple.com/hotspot-detect.html">http://captive.apple.com/hotspot-detect.html</a>
-      <li><a href="http://www.apple.com/library/test/success.html">http://www.apple.com/library/test/success.html</a>
-      <li><a href="http://attwifi.apple.com/library/test/success.html">http://attwifi.apple.com/library/test/success.html</a>
-      <li><a href="http://www.msftncsi.com/ncsi.txt">http://www.msftncsi.com/ncsi.txt</a>
+      <li><a class="goog" href="http://clients3.google.com/generate_204">http://clients3.google.com/generate_204</a>
+      <li><a class="goog" href="http://www.gstatic.com/generate_204">http://www.gstatic.com/generate_204</a>
+      <li><a class="goog" href="http://172.217.6.238/generate_204">http://172.217.6.238/generate_204</a>
+      <li><a class="other" href="http://captiveportal.kuketz.de/">http://captiveportal.kuketz.de</a>
+      <li><a class="other" href="https://e.foundation/net_204/">https://e.foundation/net_204/</a>
+      <li><a class="other" href="https://elementary.io/generate_204">https://elementary.io/generate_204</a>
+      <li><a class="other" href="http://httpstat.us/204">http://httpstat.us/204</a>
+      <li><a class="apple" href="http://captive.apple.com/hotspot-detect.html">http://captive.apple.com/hotspot-detect.html</a>
+      <li><a class="apple" href="http://www.apple.com/library/test/success.html">http://www.apple.com/library/test/success.html</a>
+      <li><a class="apple" href="http://attwifi.apple.com/library/test/success.html">http://attwifi.apple.com/library/test/success.html</a>
+      <li><a class="msft" href="http://www.msftncsi.com/ncsi.txt">http://www.msftncsi.com/ncsi.txt</a>
     </ul>
   </body>
 </html>
